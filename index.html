@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="#">
+    <!--fontawsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!--audio-->
+        <audio src="" class="audioTag"></audio>
+        <!--about song-->
+        <div class="songDiv">
+            <div class="trackImage"><!-- Track Image --></div>
+            <div class="trackName"><!-- Track Name --></div>
+            <div class="trackArtist"><!-- Track Artist --></div>
+        </div>
+        <!--about time-->
+        <div class="timeDiv">
+            <!-- currentDisplay -->
+            <div class="currentDisplay">00:00</div>
+            <!-- totalTimeLength -->
+            <div class="totalTimeLength">
+                <!-- currentTime -->
+                <div class="currentTime">
+                </div>
+            </div>
+            <!-- totalDisplay -->
+            <div class="totalDisplay">00:00</div>
+        </div>
+        <!--about buttons-->
+        <div class="buttons">
+            <!-- previousBtn -->
+            <div class="previousBtn">
+                <i class="fa-solid  fa-step-backward fa-2x" onclick="previous()"></i>
+            </div>
+            <!-- playpauseBtn -->
+            <div class="playpauseBtn">
+                <!-- playBtn -->
+                <i class="playBtn fa-solid fa-circle-play fa-4x" onclick="playSong()"></i>
+                <!-- pauseBtn -->
+                <i class="pauseBtn fa-solid fa-circle-pause fa-4x hidden" onclick="pauseSong()"></i>
+            </div>
+            <!-- nextBtn -->
+            <div class="nextBtn">
+                <i class="fa-solid fa-forward-step fa-2x" onclick="next()"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

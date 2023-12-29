@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    background-color: lightblue;
+}
+
+/* container */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about song */
+.songDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* trackImage */
+.trackImage {
+    background-image: url();
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    margin: 0px 25px 25px;
+}
+/* trackName */
+.trackName{
+    font-size: 50px;
+}
+/* tractArtist */
+.trackArtist {
+    font-size: 30px;
+    margin: 15px 0px;
+}
+/* about buttons */
+.buttons {
+    display: flex;
+    align-items: center;
+}
+/* previousBtn, playpauseBtn, nextBtn  */
+.previousBtn, .playpauseBtn, .nextBtn {
+    padding: 25px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.previousBtn:hover, .playpauseBtn:hover, .nextBtn:hover {
+    opacity: 1;
+    transform: scale(0.9);
+}
+i {
+    cursor: pointer;
+}
+/* about time */
+/* timeDiv */
+.timeDiv {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* currentDisplay, totalDisplay */
+.currentDisplay, .totalDisplay {
+    font-size: 20px;
+}
+/* totalTimeLength */
+.totalTimeLength {
+    width: 400px;
+    height: 5px;
+    background-color: gray;
+    margin: 0px 20px;
+}
+/* currentTime */
+.currentTime {
+    width: 0px;
+    height: 5px;
+    background-color: blue;
+}
+/* hidden */
+.hidden {
+    display: none;
+}
