@@ -1,0 +1,3 @@
+-This is a JS-music-player-project file .
+-Languages uses are HTML , CSS , JS , Bootstrap 
+-You try to open the music if you have time , I'm sure you'll be happy
